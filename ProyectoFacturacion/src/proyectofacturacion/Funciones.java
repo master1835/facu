@@ -30,12 +30,12 @@ public class Funciones {
     
     public static GregorianCalendar traerPrimerDiaHabil(GregorianCalendar f){
         boolean r = false;
-        int dia=f.get(Calendar.DATE);   //xq no puedo poner f.DATE;
+        int dia=f.get(Calendar.DATE); 
         
         while (r==false){
         if ((dia>1)||(dia<7)){
-            r=true;
             
+            break;
         }
         dia=dia+1;
         }
@@ -49,8 +49,8 @@ public class Funciones {
         
         while (r==true){
         if ((dia>1)||(dia<7)){
-            r=false;
             
+            break;
         }
         dia=dia+1;
         }
