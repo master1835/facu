@@ -11,6 +11,7 @@ package geometria;
 public class Punto {
    private double x;
    private double y;
+   
     
 public Punto() {
     this.x=0;
@@ -39,6 +40,10 @@ public Punto(double x, double y) {
     }
 public boolean equals(Punto p) {
     return((x==p.getX())&&(y==p.getY()));
+}
+public double calcularDistancia(Punto p2){
+    
+   return Math.sqrt(Math.pow((p2.getX()-x),2) + Math.pow((p2.getY()-y),2));
 }
 public String toString() {
     return ("("+x+","+y+")");
