@@ -89,7 +89,7 @@ public String calcularEdad(){
          mes=mes+12;
      }
      if (dia<0){
-         dia=dia+ new GregorianCalendar().get(Calendar.DAY_OF_MONTH);
+         dia=dia+ new GregorianCalendar().getActualMaximum(Calendar.DAY_OF_MONTH);
      }
     
      
